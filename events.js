@@ -24,3 +24,4 @@ function EventEmitter(){
     return { addEvent, raiseEvent, removeEvent }
 }
 
+export function EventEmitter;
