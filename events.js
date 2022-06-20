@@ -1,4 +1,3 @@
-
 function EventEmitter(){
     let events = {};
 
@@ -17,8 +16,11 @@ function EventEmitter(){
     }
 
     function removeEvent(str, fn){
-        let index = events[str].findIndex( function => function = fn);
+        let index = events[str].findIndex( func => func === fn);
 
         events[str].splice(index, 1);
     }
+
+    return { addEvent, raiseEvent, removeEvent }
 }
+
