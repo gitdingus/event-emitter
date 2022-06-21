@@ -1,4 +1,4 @@
-function EventEmitter(){
+(function EventEmitter(){
     let events = {};
 
     function addEvent(str, fn){
@@ -22,6 +22,6 @@ function EventEmitter(){
     }
 
     return { addEvent, raiseEvent, removeEvent }
-}
+})();
 
 export { EventEmitter };
