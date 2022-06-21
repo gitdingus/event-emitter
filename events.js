@@ -1,4 +1,4 @@
-(function EventEmitter(){
+let EventEmitter = (function (){
     let events = {};
 
     function addEvent(str, fn){
