@@ -8,9 +8,9 @@
         events[str].push(fn);
     }
 
-    function raiseEvent(str){
+    function raiseEvent(str, arg){
         if (events[str]){
-            events[str].forEach( fn => fn());
+            events[str].forEach( fn => fn(arg));
         }
 
     }
