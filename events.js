@@ -8,9 +8,9 @@ let EventEmitter = (function (){
         events[str].push(fn);
     }
 
-    function raiseEvent(str, arg){
+    function raiseEvent(str, ...arg){
         if (events[str]){
-            events[str].forEach( fn => fn(arg));
+            events[str].forEach( fn => fn(...arg));
         }
 
     }
